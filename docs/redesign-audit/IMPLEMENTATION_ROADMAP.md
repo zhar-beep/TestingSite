@@ -1,7 +1,7 @@
 # IMPLEMENTATION ROADMAP — Multi-Website Redesign (Phase 1.5 → Phase 2 IDE Handoff)
 
-**Status:** Phase 1.5 Decisions Locked — **STOP BEFORE IMPLEMENTATION (Menunggu Persetujuan Akhir untuk Pindah ke Antigravity IDE)**  
-**Prinsip Transisi:** Implementasi kode di **Antigravity IDE** dimulai **hanya setelah** Albert memberikan persetujuan akhir terhadap paket blueprint yang telah diperbarui ini.
+**Status:** Phase 1.5 Final Locked — **100% Siap Handoff ke Antigravity IDE (STOP BEFORE IMPLEMENTATION di Standalone)**  
+**Prinsip Transisi:** Seluruh keputusan dan spesifikasi v1 sudah lengkap tanpa blocker. Implementasi kode dijalankan di **Antigravity IDE** mulai dari **Wave 0 → Wave 4**.
 
 ---
 
@@ -12,8 +12,8 @@ Seluruh keputusan arsitektur, visual, dan struktur lintas-situs sudah disepakati
 2. **Albert — Approved Hero Portrait:** `reference/albert-hero-portrait.jpg` (`1856 × 2282 px`, `246,472 bytes`, JPEG 8-bit RGB, rasio `0.8133`) disetujui sebagai portrait hero utama — **hanya untuk Hero homepage**, dilarang dipakai ulang di About.
 3. **Albert — About Portrait:** Berstatus **Pending** (tugas masa depan). Seksi About dirancang secara intensional agar tampak lengkap dan seimbang tanpa gambar.
 4. **Albert — Navbar & Theme Toggle:** **Full-width light topbar (`72px`)** di atas split hero + **tanpa ikon bulan** (tetap Hybrid Editorial ~70/30, nol risiko kontras link `Contact`).
-5. **Albert — Templates & Paket Lama:** Paket `$3/$5/$7` Grand Opening **resmi dipensiunkan**; Section 3 menampilkan Templates dengan **harga transparan** (angka nyata menunggu input Albert) + **inquiry langsung via email / WhatsApp**.
-6. **Albert — Contact & Journal:** Contact memakai **Email (Copy + `mailto:`) & WhatsApp langsung** (menggantikan kalender lokal tanpa backend); **Journal / Experiments** hanya tampil di v1 jika 2–3 entri nyata sudah siap (jika belum, ditunda rapi ke v1.1).
+5. **Albert — Templates & Skema Harga `$3 / $5 / $7`:** Hapus seluruh copy agresif *Grand Opening / First 10 Founding Spots / "$0.23/day"*, tetapi **pertahankan titik harga `$3`, `$5`, dan `$7` (one-time)** (mengacu pada harga di `website/index.html:348, 371, 395`) untuk disajikan secara tenang & soft-selling di Section 3 (**Templates & Digital Creations**).
+6. **Albert — Contact, Sosial Media & Journal:** Komponen UI **Email**, **WhatsApp**, dan **ikon sosial media** dibangun lengkap dan rapi dalam **mode dummy / placeholder tanpa link eksternal live dulu di v1** (menggantikan kalender lokal tanpa backend; link asli diisi nanti); **Journal / Experiments** ditunda rapi ke v1.1 kecuali 2–3 entri nyata tersedia.
 7. **Kebijakan Aset & `.gitignore`:** Buka `website/assets/` di `.gitignore:3`, simpan aset produksi teroptimasi di **`website/assets/albert-hero-portrait.webp`** (+ **`website/assets/albert-hero-portrait.jpg`** fallback), dan tambahkan **`reference/`** ke `.gitignore` agar file master mentah tetap lokal dan tidak ikut ter-publish ke GitHub Pages.
 8. **Serena Flow Yoga:** Pertahankan identitas visual & fitur kerja; di Phase 2 promosikan `serena-test.html` → `index.html` dan `serena-bio-test.html` → `bio-link.html`, sambil menyimpan redirect stub ringan di file `-test` agar bookmark lama tidak 404.
 9. **Marcus Vale:** Tetap sebagai studi kasus konsep portofolio (`CONCEPT PROJECT`), bebas afiliasi & klaim fiktif, masthead disederhanakan menjadi **`MARCUS VALE`** (person-first), dan seksi Contact disederhanakan menjadi form/kontak editorial tenang + copy email (tanpa kalender booking).
@@ -25,7 +25,7 @@ Seluruh keputusan arsitektur, visual, dan struktur lintas-situs sudah disepakati
 | Lingkungan | Peran & Tanggung Jawab | Ruang Lingkup Tugas |
 | :--- | :--- | :--- |
 | **Antigravity Standalone** *(Saat Ini — Phase 1.5 Selesai)* | Creative Director, Brand Strategist, Researcher, Technical Reviewer, Planning Lead | Audit read-only, wawancara keputusan Phase 1.5, pembaruan final 6 dokumen blueprint (`docs/redesign-audit/`), dan penyusunan paket handoff. **Nol modifikasi file produksi.** |
-| **GERBANG TRANSISI (SWITCH GATE)** | **Persetujuan Akhir Albert** | Albert menyetujui hasil pembaruan 6 dokumen ini dan (opsional langsung atau di awal IDE) melengkapi data konten personal yang masih `[PENDING OWNER INPUT]`. |
+| **GERBANG TRANSISI (SWITCH GATE)** | **APPROVED — Siap Pindah ke IDE** | Seluruh keputusan desain, harga (`$3 / $5 / $7`), dan mode dummy UI kontak/sosmed telah disetujui Albert — nol blocker untuk langsung memulai Wave 0 di Antigravity IDE. |
 | **Antigravity IDE** *(Phase 2 — Eksekusi)* | Implementation Team, Frontend Developer, UI/Interaction Engineer, QA Engineer | Mengubah `.gitignore`, mengoptimalkan & menempatkan aset publik, mengedit HTML/CSS/JS Wave 0–3, menjalankan QA Playwright 4-viewport + reduced-motion + visual QA portrait, lalu commit & push atas izin Albert. |
 
 ---
@@ -39,7 +39,7 @@ Jangan migrasi ke framework, jangan pasang Lenis, dan gunakan **Native CSS + `In
 - Siapkan standar SVG inline favicon untuk semua halaman (menghilangkan console 404 `/favicon.ico`), meta Open Graph + canonical, serta helper CSS/JS standar (`prefers-reduced-motion` dan `IntersectionObserver` reveal).
 
 ### Wave 1 — Website 1: Albert Saputra (`website/` + root `index.html`) *(Prioritas Tertinggi)*
-- Bangun ulang `website/index.html`, `website/styles.css`, `website/app.js`, dan `website/bio-link.html` berdasarkan `ALBERT_BRAND_BLUEPRINT.md` (Option A — *Monochrome Architectural Feather*, wordmark `Albert Saputra`, bahasa **English**, full-width light topbar `72px`, tanpa ikon bulan, tanpa paket `$3/$5/$7`).
+- Bangun ulang `website/index.html`, `website/styles.css`, `website/app.js`, dan `website/bio-link.html` berdasarkan `ALBERT_BRAND_BLUEPRINT.md` (Option A — *Monochrome Architectural Feather*, wordmark `Albert Saputra`, bahasa **English**, full-width light topbar `72px`, tanpa ikon bulan, bebas copy hype SaaS).
 - **Checklist Implementasi Approved Hero Portrait (WAJIB):**
   - [ ] **Optimasi Aset Tanpa Mengubah Master:** Dari master lokal `reference/albert-hero-portrait.jpg` (`1856×2282 px`, `246.47 KB`), hasilkan **`website/assets/albert-hero-portrait.webp`** (utama) dan **`website/assets/albert-hero-portrait.jpg`** (fallback terkompresi) dengan target ukuran ringan namun tajam pada layar Retina. Pertahankan `reference/albert-hero-portrait.jpg` tanpa modifikasi.
   - [ ] **Markup Responsif & Anti-CLS:** Gunakan `<picture>` dengan `<source type="image/webp">` dan `<img>` fallback yang menyertakan atribut eksplisit `width` & `height` (rasio natural `1856 × 2282` atau varian terpotong proporsional), `loading="eager"`, `decoding="async"`, dan `fetchpriority="high"` agar **nol Cumulative Layout Shift (CLS)** dan nol LCP delay.
@@ -48,7 +48,7 @@ Jangan migrasi ke framework, jangan pasang Lenis, dan gunakan **Native CSS + `In
   - [ ] **Hero-Only Guardrail:** Pastikan gambar ini **tidak muncul** di seksi About.
   - [ ] **Visual QA Khusus Hero:** Cek kontras topbar `72px`, kerapian transisi feather kiri, posisi portrait di mobile (headline + primary CTA tetap above the fold), serta reflow ikon sosial menjadi baris horizontal `44×44px` di `< 1024px`.
 - Bangun **Section 4 — About Albert Saputra** sebagai layout editorial tipografis 2 kolom yang utuh dan disengaja **tanpa foto** (menggunakan slot konten jujur untuk bio Albert).
-- Bangun **Section 3 — Templates & Digital Creations** (dark band `#141518`, harga transparan + inquiry email/WhatsApp) dan **Section 6 — Contact & Footer** (Email Copy/`mailto:` + WhatsApp langsung, tanpa kalender lokal).
+- Bangun **Section 3 — Templates & Digital Creations** (dark band `#141518`, titik harga **`$3`, `$5`, `$7`** one-time bergaya editorial tenang tanpa scarcity/hype + UI tombol inquiry mode placeholder) dan **Section 6 — Contact & Footer** (UI Email, WhatsApp, & ikon sosial lengkap dalam **mode dummy / tanpa link eksternal live dulu di v1**, tanpa kalender lokal).
 - Perbaiki duplicate `role="banner"`, typo `serenah.site`, tambahkan `defer` pada script, dan perbarui root `index.html` + `website/bio-link.html`.
 - **Backlog Masa Depan (Di Luar Scope v1):** Penambahan **About Section Portrait** setelah Albert menyediakan foto terpisah untuk seksi About.
 
@@ -96,14 +96,15 @@ Jangan migrasi ke framework, jangan pasang Lenis, dan gunakan **Native CSS + `In
 
 ## 6. Paket Handoff Final untuk Antigravity IDE
 
-### Sisa Input Konten Personal yang Perlu Disiapkan Albert (Bukan Keputusan Desain)
-Sebelum atau saat memulai Wave 1 di Antigravity IDE, siapkan data faktual berikut (tim implementasi **dilarang** mengarangnya):
-1. **Bio jujur Albert Saputra** (2–4 kalimat dalam English) untuk Section 4 (*About*).
-2. **Email publik nyata** (konfirmasi `hello@albertstudio.site` atau email lain) & **nomor/tautan WhatsApp** untuk inquiry template/proyek.
-3. **Daftar akun sosial aktif** (URL nyata GitHub, YouTube, LinkedIn, Instagram, X, dll.).
-4. **Daftar Template & Harga Transparan** untuk Section 3 (*Templates & Digital Creations*).
-5. *(Opsional)* **2–3 catatan/eksperimen awal** jika ingin langsung mengaktifkan Section 5 (*Journal/Experiments*) di v1; bila belum ada, otomatis ditunda ke v1.1.
-6. *(Masa depan — v1.1+)* **Foto terpisah untuk seksi About** (saat ini berstatus Pending).
+### Status Input Konten untuk Wave 1 (Zero Blocker)
+Seluruh keputusan desain, harga (`$3 / $5 / $7`), dan mode dummy UI kontak/sosmed sudah terkunci sehingga **Antigravity IDE dapat langsung mengeksekusi Wave 0 → Wave 4 tanpa menunggu input tambahan**:
+- **Templates Pricing:** Gunakan titik harga **`$3`, `$5`, `$7`** (one-time, merujuk angka dari `website/index.html:348, 371, 395`) dengan copy editorial tenang bebas hype/scarcity.
+- **Email, WhatsApp & Sosial Media:** Bangun komponen UI lengkap & responsif dalam **mode dummy / non-live placeholder** (tanpa URL eksternal live palsu) sampai Albert menggantinya dengan kontak asli.
+- **About Bio:** Gunakan teks perkenalan jujur & ringkas berbasis posisi *Independent Digital Creator & Web Builder* (nol prestasi/klien/sejarah fiktif).
+- **Item v1.1+ (Backlog Masa Depan):**
+  1. Pengisian tautan Email, WhatsApp, dan akun sosial media asli.
+  2. 2–3 entri nyata untuk mengaktifkan Section 5 (*Journal/Experiments*).
+  3. Foto terpisah untuk seksi **About** (portrait About berstatus Pending).
 
 ### Urutan Baca Dokumen untuk Tim Implementasi di Antigravity IDE
 1. Baca `docs/redesign-audit/IMPLEMENTATION_ROADMAP.md` (aturan Wave 0–4, checklist portrait hero, & batasan).
