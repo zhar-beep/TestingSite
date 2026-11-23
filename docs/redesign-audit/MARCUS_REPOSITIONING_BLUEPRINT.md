@@ -1,6 +1,6 @@
 # MARCUS REPOSITIONING BLUEPRINT — Marcus Vale (`projects/marcus-vale-mentor-concept/`)
 
-**Status:** Phase 1 — Repositioning Blueprint (Menunggu Sign-Off Albert)  
+**Status:** Phase 1.5 — Approved & Locked Repositioning Blueprint (Siap Handoff ke Antigravity IDE)  
 **Target:** `projects/marcus-vale-mentor-concept/index.html`, `bio-link.html`, `styles.css`, `app.js`  
 **Tujuan Utama (`read.md` Section 7):** Mengubah website dari funnel info-product & affiliate marketer menjadi **personal brand motivasional & berwawasan bisnis yang kredibel**, bebas konten afiliasi, dan bebas klaim fiktif yang menyamar sebagai fakta.
 
@@ -97,9 +97,10 @@ Marcus **tidak boleh** meniru nuansa putih-monokrom Albert maupun nuansa organik
 
 ---
 
-## 6. Keputusan yang Dibutuhkan dari Albert
+## 6. Keputusan Terkunci (Phase 1.5)
 
-1. **Status Persona Marcus Vale:** Apakah Marcus murni **studi kasus konsep portofolio** (untuk memamerkan kemampuan desain Albert pada niche personal brand bisnis) atau mewakili klien/figur nyata?
-2. **Nama Masthead:** Pertahankan `Marcus Vale — Vale Clarity` atau sederhanakan menjadi **`MARCUS VALE`** saja (person-first)?
-3. **Bentuk Seksi Contact:** Tetap pakai widget kalender interaktif (dengan framing *Start a Conversation*) atau disederhanakan menjadi form kontak editorial + tombol copy email?
-4. **Penggunaan Aset Foto:** Setuju mempertahankan `marcus-portrait.jpg` dan `keynote-stage.jpg` untuk konsep baru, dan memensiunkan `mentor-desk-setup.jpg` dari konteks afiliasi (hanya dipakai jika cocok sebagai visual ruang baca/menulis)?
+Seluruh keputusan konfigurasi Marcus Vale telah dikunci tanpa mengubah arah repositioning bebas-afiliasi yang telah disetujui:
+1. **Status Persona:** Tetap sebagai **studi kasus konsep portofolio (`CONCEPT PROJECT · PORTFOLIO SHOWCASE`)** — tidak ada klaim kredensial dunia nyata yang dikarang.
+2. **Nama Masthead:** Disederhanakan menjadi **`MARCUS VALE`** (person-first, tanpa sub-brand yang mendominasi).
+3. **Bentuk Seksi Contact:** Disederhanakan menjadi **form/kontak editorial yang tenang + tombol copy email (tanpa widget kalender booking)** — sekaligus mengeliminasi kompleksitas kalender & bug overflow `360px` pada versi baru.
+4. **Aset Foto Konsep:** Pertahankan `marcus-portrait.jpg` dan `keynote-stage.jpg` untuk konsep editorial baru; pensiunkan `mentor-desk-setup.jpg` dari segala konteks afiliasi/setup.

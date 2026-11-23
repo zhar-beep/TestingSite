@@ -1,6 +1,6 @@
 # SERENA REFINEMENT BLUEPRINT — Serena Flow Yoga (`projects/serena-flow-yoga-concept/`)
 
-**Status:** Phase 1 — Refinement Blueprint (Menunggu Sign-Off Albert)  
+**Status:** Phase 1.5 — Approved & Locked Refinement Blueprint (Siap Handoff ke Antigravity IDE)  
 **Target Aktif:** `serena-test.html`, `serena-bio-test.html`, `styles-test.css`, `app-test.js`  
 **Prinsip Utama (`read.md` Section 6):** **REFINEMENT, BUKAN penggantian identitas.** Pertahankan atmosfer editorial yang tenang, hangat, dan elegan; perbaiki bug responsif/aksesibilitas/logika booking serta tambahkan interaksi mikro yang halus dan bermakna.
 
@@ -89,6 +89,6 @@
    - Hapus fungsi tak terpakai `escapeHtml()` (`app-test.js:590-597`) dan bungkus `app-test.js` dalam IIFE atau module scope agar tidak mencemari global `window`.
    - Ganti **7 atribut inline `style=""`** (`serena-test.html:263, 422, 449, 462, 465`; `serena-bio-test.html:279, 295`) dengan utility class CSS.
    - Tambahkan `defer` pada `<script src="app-test.js" defer>` serta tag Open Graph & canonical.
-4. **Keputusan Konsolidasi File (Menunggu Persetujuan Albert):**
+4. **Konsolidasi File (Keputusan Terkunci Phase 1.5):**
    - Saat ini `projects/serena-flow-yoga-concept/` menyimpan 2 set file lengkap (`index.html` v1 legacy vs `serena-test.html` v2 aktif).
-   - **Rekomendasi:** Setelah refinement selesai di Phase 2, promosikan versi refined menjadi **`index.html` & `bio-link.html`** sebagai URL kanonis, lalu arsipkan/hapus file v1 lama — sambil menyisakan redirect stub ringan di `serena-test.html` agar link/bookmark lama tidak 404.
+   - **Keputusan Disetujui Albert:** Setelah refinement selesai di Phase 2, promosikan versi refined menjadi **`index.html` & `bio-link.html`** kanonis, arsipkan/hapus file v1 lama, dan simpan **redirect stub ringan** di `serena-test.html` & `serena-bio-test.html` agar link/bookmark lama tidak mengalami 404. *(Seluruh keputusan identitas desain & refinement Serena tetap tidak berubah.)*

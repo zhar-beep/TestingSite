@@ -174,8 +174,20 @@ Diposisikan sebagai *"Marcus Vale — Vale Clarity"* dengan palet *"Warm Woody E
 
 ## 6. Rekomendasi Prioritas Lintas-Ekosistem
 
-1. **P0 — Repo Hygiene Sebelum Implementasi:** Perbaiki `.gitignore:3` (`website/assets/`), tambahkan `<link rel="icon">` SVG di seluruh halaman Albert & Marcus, dan lengkapi meta Open Graph/canonical.
-2. **P1 — Redesign Utama Website Albert (`website/`):** Rombak total dari dark SaaS funnel ke **Hybrid Editorial (`D. Hybrid` — Monochrome Architectural Feather)**, angkat Selected Work ke Section 2, hadirkan Templates Showcase secara soft-selling di band gelap, dan pasang portrait placeholder jujur tanpa wajah AI.
-3. **P2 — Refinement Serena Flow (`projects/serena-flow-yoga-concept/`):** Pertahankan identitas visual sepenuhnya; perbaiki 4 bug kritis (`prefers-reduced-motion`, overflow `360px`, tombol kalender putih tak terlihat di `<=480px`, kontradiksi jadwal vs booking), kompres 3 JPG `2.32 MiB` ke WebP/JPEG, tambah animasi editorial halus, dan putuskan konsolidasi v1/v2.
-4. **P3 — Repositioning Marcus Vale (`projects/marcus-vale-mentor-concept/`):** Hapus seluruh elemen afiliasi & funnel `$19/$39`, ubah ke personal brand editorial berbasis filosofi/esai/perspektif bisnis, perbaiki tabrakan caption hero + overflow `360px` + focus trap mobile drawer.
+1. **P0 — Repo Hygiene Sebelum Implementasi:** Perbaiki `.gitignore:3` (buka `website/assets/` dan tambahkan `reference/` agar master mentah tetap lokal), tambahkan `<link rel="icon">` SVG di seluruh halaman Albert & Marcus, dan lengkapi meta Open Graph/canonical.
+2. **P1 — Redesign Utama Website Albert Saputra (`website/`):** Rombak total dari dark SaaS funnel ke **Hybrid Editorial (`D. Hybrid` — Option A: Monochrome Architectural Feather)** dengan nama brand `Albert Saputra` (English), full-width light topbar `72px` tanpa ikon bulan, angkat Selected Work ke Section 2, hadirkan Templates Showcase secara soft-selling (harga transparan + inquiry email/WhatsApp) di band gelap, integrasikan portrait hero final (`reference/albert-hero-portrait.jpg` → `website/assets/albert-hero-portrait.{webp,jpg}`) khusus di Hero, dan bangun seksi About secara intensional tanpa foto (portrait About berstatus Pending).
+3. **P2 — Refinement Serena Flow (`projects/serena-flow-yoga-concept/`):** Pertahankan identitas visual sepenuhnya; perbaiki 4 bug kritis (`prefers-reduced-motion`, overflow `360px`, tombol kalender putih tak terlihat di `<=480px`, kontradiksi jadwal vs booking), kompres 3 JPG `2.32 MiB` ke WebP/JPEG, tambah animasi editorial halus, dan promosikan `serena-test.html` → `index.html` kanonis (dengan redirect stub).
+4. **P3 — Repositioning Marcus Vale (`projects/marcus-vale-mentor-concept/`):** Hapus seluruh elemen afiliasi & funnel `$19/$39`, ubah ke personal brand editorial berbasis filosofi/esai/perspektif bisnis (`CONCEPT PROJECT`, masthead `MARCUS VALE`), sederhanakan Contact menjadi kontak editorial tenang + copy email (tanpa kalender booking), serta perbaiki tabrakan caption hero & focus trap mobile drawer.
 5. **P4 — Pertahankan Stack Vanilla Static:** Jangan migrasi ke framework atau memasang Lenis/Motion secara paksa tanpa kebutuhan nyata; jaga kemudahan perawatan dan performa GitHub Pages.
+
+---
+
+## 7. Phase 1.5 Asset & Decision Addendum (2026-11-23)
+
+Baseline inventaris Phase 1 di Bagian 1 (**26 file repo + 0 gambar di `website/`**) tetap dipertahankan sebagai catatan historis awal audit. Setelah Phase 1 selesai, terdapat satu aset referensi baru di luar produksi serta penguncian keputusan Phase 1.5:
+
+- **Aset Referensi Baru Terverifikasi:** `reference/albert-hero-portrait.jpg` *(catatan: nama folder aktual di workspace adalah `reference/`, bukan `_reference/`)*.
+  - **Karakteristik File Aktual:** Format **JPEG (JFIF, 8-bit RGB)**, dimensi **`1856 × 2282 px`**, aspek rasio **`0.8133`** (~`4:5` vertical portrait), ukuran **`246,472 bytes`** (`240.70 KiB` / `246.47 KB`).
+  - **Status Penggunaan:** Disetujui sebagai **portrait hero utama homepage Albert Saputra** (hanya untuk Hero; tidak diulang di seksi About; portrait About berstatus **Pending**).
+  - **Implikasi `.gitignore`:** Baris `.gitignore:3` (`website/assets/`) wajib dihapus pada Wave 0 sebelum versi produksi teroptimasi ditempatkan di `website/assets/albert-hero-portrait.webp` + `website/assets/albert-hero-portrait.jpg`, dan folder `reference/` wajib ditambahkan ke `.gitignore` agar file master mentah tidak ikut ter-publish ke GitHub Pages.
+  - **Validasi Visual Terhadap Isu Navbar:** Inspeksi langsung `reference/albert-hero-portrait.jpg` mengonfirmasi adanya transisi pilar gelap di tengah-atas ke dinding terang di tepi kanan (~15–18%), sehingga keputusan **full-width light topbar `72px`** di atas split hero (tanpa ikon bulan) menuntaskan risiko kontras link `Contact` secara permanen.

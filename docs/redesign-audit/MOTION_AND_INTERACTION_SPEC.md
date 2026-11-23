@@ -8,9 +8,9 @@
 
 ## 1. Prinsip Motion Lintas-Situs
 
-1. **Content-First, Zero LCP Delay:** Elemen Hero (headline, intro, CTA utama, portrait/hero image) tampil segera pada initial paint — **jangan pernah** menyembunyikan hero di balik `opacity: 0` atau preloader.
+1. **Content-First, Zero LCP Delay:** Elemen Hero (headline, intro, CTA utama, serta portrait hero final Albert Saputra `website/assets/albert-hero-portrait.webp/.jpg` maupun hero image Serena/Marcus) tampil segera pada initial paint (`opacity: 1` tanpa reveal delay, `loading="eager"`, `fetchpriority="high"`, dimensi eksplisit agar nol CLS) — **jangan pernah** menyembunyikan hero di balik `opacity: 0` atau preloader. Hindari efek zoom/parallax berlebihan pada portrait manusia di Hero agar kesan editorial tetap tenang dan berwibawa.
 2. **GPU-Composited Only:** Animasi hanya mengubah properti ramah kompositor (`transform`, `opacity`, `clip-path`, warna/border). Dilarang menganimasi `top`, `left`, `width`, `height`, `margin`, atau `transition: all`.
-3. **Restraint & Rhythm:** Gerakan singkat (`160–260ms` untuk kontrol UI, `420–550ms` untuk editorial reveal), jarak kecil (`10–16px`), easing dekelerasi alami (`cubic-bezier(0.22, 1, 0.36, 1)`), dan dipicu **satu kali** saat masuk viewport (tidak berkedip ulang setiap scroll naik-turun).
+3. **Restraint & Rhythm:** Gerakan singkat (`160–260ms` untuk kontrol UI, `420–550ms` untuk editorial reveal), jarak kecil (`10–16px`), easing dekelerasi alami (`cubic-bezier(0.22, 1, 0.36, 1)`), dan dipicu **satu kali** saat masuk viewport (tidak berkedip ulang setiap scroll naik-turun). Seksi About Albert Saputra (tanpa foto karena About portrait berstatus Pending) cukup memakai reveal tipografi ringan yang tenang tanpa animasi dekoratif buatan untuk mengisi kekosongan gambar.
 4. **Identitas Gerak Berbeda per Situs:**
    - **Albert (Hybrid Editorial):** Presisi arsitektural — transisi bersih, crisp hover, transisi halus antar band terang dan gelap.
    - **Serena Flow Yoga (Calm Editorial):** Napas tenang — settle lembut, hover gambar sangat halus (`scale(1.02)`), zero jitter.
