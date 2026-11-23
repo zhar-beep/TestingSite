@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcus Vale — Personal Hub | Vale Clarity</title>
+  <meta name="description" content="Flagship E-Book, video library, selective mentoring booking, and Marcus Vale's daily reading and desk setup.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..500&amp;family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="hub-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="concept-bar" role="note">
+    <div class="concept-bar__inner">CONCEPT PROJECT · PORTFOLIO SHOWCASE</div>
+  </div>
+
+  <header class="hub-header">
+    <div class="hub-container hub-topbar">
+      <a class="masthead__brand masthead__brand--left" href="index.html" aria-label="Vale Clarity home">
+        <span class="masthead__title">VALE CLARITY</span>
+        <span class="masthead__sub">PERSONAL HUB</span>
+      </a>
+      <a class="hub-back-link" href="index.html">Visit Full Website →</a>
+    </div>
+  </header>
+
+  <main id="main-content" class="hub-container">
+    <!-- Dark Espresso Editorial Profile Card -->
+    <section class="hub-profile" aria-labelledby="hub-heading">
+      <div class="hub-avatar">
+        <img
+          src="assets/marcus-portrait.jpg"
+          alt="Portrait of Marcus Vale seated in a sunlit wood-paneled study"
+          width="1200"
+          height="1600"
+          fetchpriority="high"
+        >
+      </div>
+      <div>
+        <p class="eyebrow eyebrow--gold">Author · Speaker · Executive Mentor</p>
+        <h1 id="hub-heading" class="hub-profile__title">Marcus Vale</h1>
+        <p class="hub-profile__bio">
+          Helping senior operators, founders, and rising leaders speak with calm authority, edit sharp decisions, and command high-stakes rooms.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 1: Featured E-Book, Videos & Speaking -->
+    <section class="hub-section" aria-labelledby="featured-hub-heading">
+      <div class="hub-section__head">
+        <p class="eyebrow">01 · Featured E-Book, Videos &amp; Speaking</p>
+        <h2 id="featured-hub-heading">Start reading, watch, or inquire directly</h2>
+      </div>
+
+      <div class="hub-links-list">
+        <button
+          type="button"
+          class="hub-link-card hub-link-card--espresso"
+          data-ebook-trigger="flagship"
+        >
+          <span class="hub-link-card__body">
+            <span class="hub-link-card__kicker">FLAGSHIP FIELD GUIDE · $19</span>
+            <span class="hub-link-card__title">Buy Flagship E-Book — Speak With Calm Authority ($19)</span>
+            <span class="hub-link-card__sub">142 pages · PDF &amp; EPUB · 18 boardroom scripts + instant chapter preview</span>
+          </span>
+          <span class="hub-link-card__arrow" aria-hidden="true">→</span>
+        </button>
+
+        <a class="hub-link-card" href="index.html#videos">
+          <span class="hub-link-card__body">
+            <span class="hub-link-card__title">Watch Latest Videos (YouTube · TikTok · IG)</span>
+            <span class="hub-link-card__sub">Executive Q&amp;A breakdowns, 3-minute pitches, and vocal pacing shorts</span>
+          </span>
+          <span class="hub-link-card__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="hub-link-card" href="index.html?offering=career-clarity#availability">
+          <span class="hub-link-card__body">
+            <span class="hub-link-card__title">Book 1:1 Mentoring or Keynote</span>
+            <span class="hub-link-card__sub">Career clarity sessions, 4-week speaking sprints, and leadership offsites</span>
+          </span>
+          <span class="hub-link-card__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <button
+          type="button"
+          id="copy-email-btn"
+          class="hub-link-card"
+          data-copy-email="marcus@valeclarity.com"
+        >
+          <span class="hub-link-card__body">
+            <span class="hub-link-card__title">Copy Studio Inquiry Email</span>
+            <span class="hub-link-card__sub">marcus@valeclarity.com — press, keynotes, and private inquiries</span>
+          </span>
+          <span class="hub-link-card__arrow" aria-hidden="true">⧉</span>
+        </button>
+      </div>
+      <p id="copy-email-feedback" class="copy-feedback" aria-live="polite"></p>
+    </section>
+
+    <!-- Section 2: My Reading & Setup -->
+    <section id="my-stack" class="hub-section section-anchor" aria-labelledby="stack-hub-heading">
+      <div class="hub-section__head">
+        <p class="eyebrow">02 · Daily Reference</p>
+        <h2 id="stack-hub-heading">My Reading &amp; Setup</h2>
+        <p class="hub-section__desc">
+          The foundational strategy books, quiet desk tools, and broadcast audio gear behind my daily writing, videos, and executive mentoring sessions.
+        </p>
+        <p class="partner-note">
+          Everything here is part of my real daily setup — select partner links include community perks or partner offers when available.
+        </p>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filter setup items by category">
+        <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All (6)</button>
+        <button type="button" class="filter-btn" data-filter="books" aria-pressed="false">Books &amp; Strategy (2)</button>
+        <button type="button" class="filter-btn" data-filter="desk" aria-pressed="false">Focus &amp; Desk (2)</button>
+        <button type="button" class="filter-btn" data-filter="audio" aria-pressed="false">Speaking &amp; Audio (2)</button>
+      </div>
+      <p id="stack-count" class="filter-count" aria-live="polite">Showing 6 of 6 items</p>
+
+      <div class="stack-grid">
+        <!-- Books & Strategy (2) -->
+        <article class="stack-card" data-stack-category="books">
+          <div class="stack-card__tags">
+            <span class="pill pill--cognac">Books &amp; Strategy</span>
+            <span class="partner-tag">Partner Link</span>
+          </div>
+          <h3 class="stack-card__title">Good Strategy Bad Strategy — Richard Rumelt</h3>
+          <p class="stack-card__desc">
+            The sharpest reference I share with leaders who want to separate real strategic diagnosis from vague wish lists.
+          </p>
+          <button
+            type="button"
+            class="btn btn-wood-outline btn-sm btn-block"
+            data-partner-trigger
+            data-item-title="Good Strategy Bad Strategy — Richard Rumelt"
+            data-item-category="Books &amp; Strategy"
+            data-item-pill="pill--cognac"
+            data-item-desc="A foundational strategy text I revisit whenever advising clients through complex organizational pivots or role transitions."
+            data-item-ref="Independent Bookshop Partner Listing (Concept Reference)"
+          >
+            View Partner Details
+          </button>
+        </article>
+
+        <article class="stack-card" data-stack-category="books">
+          <div class="stack-card__tags">
+            <span class="pill pill--cognac">Books &amp; Strategy</span>
+            <span class="partner-tag">Partner Link</span>
+          </div>
+          <h3 class="stack-card__title">The Pyramid Principle — Barbara Minto</h3>
+          <p class="stack-card__desc">
+            Essential structure for leading with the answer first in board memos, executive updates, and high-stakes speeches.
+          </p>
+          <button
+            type="button"
+            class="btn btn-wood-outline btn-sm btn-block"
+            data-partner-trigger
+            data-item-title="The Pyramid Principle — Barbara Minto"
+            data-item-category="Books &amp; Strategy"
+            data-item-pill="pill--cognac"
+            data-item-desc="The gold-standard guide to top-down logical communication, referenced directly inside Speak With Calm Authority and our 4-Week Speaking Sprint."
+            data-item-ref="Executive Reading Partner Listing (Concept Reference)"
+          >
+            View Partner Details
+          </button>
+        </article>
+
+        <!-- Focus & Desk (2) -->
+        <article class="stack-card" data-stack-category="desk">
+          <div class="stack-card__tags">
+            <span class="pill pill--slate">Focus &amp; Desk</span>
+            <span class="partner-tag">Partner Link</span>
+          </div>
+          <h3 class="stack-card__title">Leuchtturm1917 Hardcover A5 Dotted Notebook</h3>
+          <p class="stack-card__desc">
+            Numbered pages and archival paper where every keynote outline and pre-session mentoring brief is drafted by hand first.
+          </p>
+          <button
+            type="button"
+            class="btn btn-wood-outline btn-sm btn-block"
+            data-partner-trigger
+            data-item-title="Leuchtturm1917 Hardcover A5 Dotted Notebook"
+            data-item-category="Focus &amp; Desk"
+            data-item-pill="pill--slate"
+            data-item-desc="Reliable numbered-page hardcover notebooks that make indexing client frameworks, video scripts, and speech drafts effortless."
+            data-item-ref="Stationery Partner Listing (Concept Reference)"
+          >
+            View Partner Details
+          </button>
+        </article>
+
+        <article class="stack-card" data-stack-category="desk">
+          <div class="stack-card__tags">
+            <span class="pill pill--slate">Focus &amp; Desk</span>
+            <span class="partner-tag">Partner Link</span>
+          </div>
+          <h3 class="stack-card__title">Time Timer MOD 60-Minute Visual Desk Timer</h3>
+          <p class="stack-card__desc">
+            Silent analog pacing for deep writing mornings and 1:1 sessions — keeps time visible without a phone on the desk.
+          </p>
+          <button
+            type="button"
+            class="btn btn-wood-outline btn-sm btn-block"
+            data-partner-trigger
+            data-item-title="Time Timer MOD 60-Minute Visual Desk Timer"
+            data-item-category="Focus &amp; Desk"
+            data-item-pill="pill--slate"
+            data-item-desc="A quiet, distraction-free desk clock that anchors 45- and 60-minute writing blocks and keynote rehearsal runs."
+            data-item-ref="Focus Hardware Partner Listing (Concept Reference)"
+          >
+            View Partner Details
+          </button>
+        </article>
+
+        <!-- Speaking & Audio (2) -->
+        <article class="stack-card" data-stack-category="audio">
+          <div class="stack-card__tags">
+            <span class="pill pill--forest">Speaking &amp; Audio</span>
+            <span class="partner-tag">Partner Link</span>
+          </div>
+          <h3 class="stack-card__title">Shure MV7+ Dynamic Broadcast Microphone</h3>
+          <p class="stack-card__desc">
+            Warm, room-rejecting dynamic voice clarity for executive video calls, YouTube sessions, and virtual keynotes.
+          </p>
+          <button
+            type="button"
+            class="btn btn-wood-outline btn-sm btn-block"
+            data-partner-trigger
+            data-item-title="Shure MV7+ Dynamic Broadcast Microphone"
+            data-item-category="Speaking &amp; Audio"
+            data-item-pill="pill--forest"
+            data-item-desc="Clean USB-C and XLR dynamic audio that keeps remote mentoring calls and studio recordings clear even in sunlit rooms."
+            data-item-ref="Broadcast Audio Partner Listing (Concept Reference)"
+          >
+            View Partner Details
+          </button>
+        </article>
+
+        <article class="stack-card" data-stack-category="audio">
+          <div class="stack-card__tags">
+            <span class="pill pill--forest">Speaking &amp; Audio</span>
+            <span class="partner-tag">Partner Link</span>
+          </div>
+          <h3 class="stack-card__title">Elgato Wave Mic Arm LP (Low-Profile Boom)</h3>
+          <p class="stack-card__desc">
+            Sits cleanly beneath camera eye-line so remote sessions feel like an unobstructed, across-the-table conversation.
+          </p>
+          <button
+            type="button"
+            class="btn btn-wood-outline btn-sm btn-block"
+            data-partner-trigger
+            data-item-title="Elgato Wave Mic Arm LP (Low-Profile Boom)"
+            data-item-category="Speaking &amp; Audio"
+            data-item-pill="pill--forest"
+            data-item-desc="Sturdy low-profile steel desk mount with hidden cable channels that keeps your frame clean on executive video calls."
+            data-item-ref="Studio Desk Mount Partner Listing (Concept Reference)"
+          >
+            View Partner Details
+          </button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="hub-container">
+      <div class="site-footer__top">
+        <div>
+          <p class="footer-brand">VALE CLARITY</p>
+          <p class="footer-tagline">Marcus Vale — Flagship E-Book, Video Library &amp; Executive Mentoring.</p>
+        </div>
+        <nav class="footer-links" aria-label="Personal Hub footer navigation">
+          <a href="index.html">Visit Full Website</a>
+          <a href="index.html#videos">Videos</a>
+          <a href="index.html#availability">Book a Call</a>
+          <a href="#my-stack">My Reading &amp; Setup</a>
+        </nav>
+      </div>
+      <div class="site-footer__bottom">
+        <span>© Marcus Vale · Vale Clarity</span>
+        <span>Conceptual showcase crafted for executive clarity &amp; creator publishing.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Safe Partner Preview Modal (Non-Live Placeholder Destination) -->
+  <div id="partner-modal" class="modal-backdrop" hidden>
+    <div
+      class="modal-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="partner-modal-title"
+      tabindex="-1"
+    >
+      <div class="modal-dialog__head">
+        <div>
+          <div class="modal-dialog__tags">
+            <span id="partner-modal-category" class="pill pill--cognac">Books &amp; Strategy</span>
+            <span class="partner-tag">Partner Link</span>
+          </div>
+          <h3 id="partner-modal-title">Item Title</h3>
+        </div>
+        <button type="button" class="modal-close-btn" data-modal-close aria-label="Close partner details">×</button>
+      </div>
+      <p id="partner-modal-desc" class="modal-dialog__desc"></p>
+      <div id="partner-modal-ref" class="modal-ref-box">Reference: Concept Partner Listing</div>
+      <p class="modal-dialog__note">
+        Everything here is part of my real daily setup — select partner links include community perks or partner offers when available.
+      </p>
+      <div class="concept-notice-bar">
+        CONCEPT PREVIEW ONLY · EXTERNAL PARTNER LINK INACTIVE
+      </div>
+      <p id="partner-modal-placeholder-feedback" class="modal-status-msg" aria-live="polite" hidden></p>
+      <div class="modal-dialog__actions">
+        <button
+          type="button"
+          id="partner-modal-placeholder-btn"
+          class="btn btn-preview-nonlive"
+          aria-disabled="true"
+          data-nonlive-control
+        >
+          Concept Preview — Partner Destination Inactive (Non-Live)
+        </button>
+        <button type="button" class="btn btn-wood-outline" data-modal-close>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive E-Book Preview Modal (Shared with index.html) -->
+  <div id="ebook-modal" class="modal-backdrop" hidden>
+    <div
+      class="modal-dialog modal-dialog--wide"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="ebook-modal-title"
+      tabindex="-1"
+    >
+      <div class="modal-dialog__head">
+        <div>
+          <div class="modal-dialog__tags">
+            <span id="ebook-modal-badge" class="pill pill--cognac">Flagship E-Book</span>
+            <span class="mono-pill mono-pill--wood">Concept Preview</span>
+          </div>
+          <h3 id="ebook-modal-title">Speak With Calm Authority</h3>
+        </div>
+        <button type="button" class="modal-close-btn" data-modal-close aria-label="Close E-Book preview">×</button>
+      </div>
+
+      <div class="ebook-modal__switcher" role="group" aria-label="Select digital edition">
+        <button type="button" class="edition-tab" data-ebook-edition="flagship" aria-pressed="true">
+          Flagship E-Book · $19
+        </button>
+        <button type="button" class="edition-tab" data-ebook-edition="bundle" aria-pressed="false">
+          Complete Clarity Bundle · $39
+        </button>
+      </div>
+
+      <div class="ebook-modal__summary">
+        <div>
+          <p id="ebook-modal-subtitle" class="ebook-modal__sub">142 Pages · PDF &amp; EPUB · 18 Boardroom Scripts</p>
+          <ul id="ebook-modal-includes" class="modal-list"></ul>
+        </div>
+        <div class="ebook-modal__price-box">
+          <span class="ebook-modal__price-label">Edition Price</span>
+          <span id="ebook-modal-price" class="ebook-modal__price">$19</span>
+          <span class="ebook-modal__price-note">One-time · Digital preview</span>
+        </div>
+      </div>
+
+      <div class="chapter-preview">
+        <div class="chapter-preview__tabs" role="group" aria-label="Sample chapter excerpts">
+          <button type="button" class="chapter-tab" data-chapter-tab="ch1" aria-pressed="true">Ch. 01 · 30s Open</button>
+          <button type="button" class="chapter-tab" data-chapter-tab="ch2" aria-pressed="false">Ch. 02 · Sharp Editing</button>
+          <button type="button" class="chapter-tab" data-chapter-tab="ch3" aria-pressed="false">Ch. 03 · Calm Q&amp;A</button>
+        </div>
+        <div class="chapter-preview__reader">
+          <p id="ebook-chapter-title" class="chapter-preview__heading"></p>
+          <p id="ebook-chapter-excerpt" class="chapter-preview__text"></p>
+        </div>
+      </div>
+
+      <div class="concept-notice-bar">
+        CONCEPT PREVIEW ONLY · NON-TRANSACTIONAL DEMO CHECKOUT
+      </div>
+
+      <p id="ebook-preview-status" class="modal-status-msg" aria-live="polite" hidden></p>
+
+      <div class="modal-dialog__actions">
+        <button type="button" id="ebook-preview-action" class="btn btn-espresso">
+          Preview Checkout Status ($19)
+        </button>
+        <button type="button" class="btn btn-wood-outline" data-modal-close>Close Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# Exclude internal QA screenshots, unused legacy assets, and OS/private files
+**/qa-screenshots/
+website/assets/
+**/social-content-plan.md
+*.db
+.env
+.env.*
+Thumbs.db
+.DS_Store

@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albert — Social-to-Income Digital Studio | Personal Websites &amp; Growth Strategy</title>
+  <meta name="description" content="Turn your social presence into income. Custom personal websites, social persona strategy, and monetization funnels starting at $3 with Year-1 .site domain included and $0/mo hosting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Floating Pill Navigation -->
+  <header class="floating-nav-wrap">
+    <div class="floating-pill" role="banner">
+      <a class="brand-lockup" href="#top" aria-label="Albert Digital Studio Home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="34" height="34" rx="10" fill="#111214"/>
+            <rect x="1" y="1" width="32" height="32" rx="9" stroke="#F59E0B" stroke-opacity="0.45" stroke-width="1.2"/>
+            <path d="M17 7.5L25.4 26H21.6L19.8 21.8H14.2L12.4 26H8.6L17 7.5ZM17 12.8L15.3 18.6H18.7L17 12.8Z" fill="#F4F4F5"/>
+            <circle cx="25.5" cy="9.5" r="2.5" fill="#F59E0B"/>
+          </svg>
+        </span>
+        <span class="brand-name">Albert</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary navigation">
+        <a class="nav-link" href="#income-systems">Income Systems</a>
+        <a class="nav-link" href="#packages">Packages</a>
+        <a class="nav-link" href="#live-work">Live Work</a>
+        <a class="nav-link" href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn--amber btn--pill nav-cta-desktop" href="#book">Claim $3–$7 Offer</a>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+            <line x1="4" y1="7" x2="20" y2="7"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="17" x2="20" y2="17"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Accessible Dark Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside
+    class="mobile-drawer"
+    id="mobile-drawer"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Mobile navigation"
+    hidden
+  >
+    <div class="drawer-head">
+      <span class="brand-name">Albert Studio</span>
+      <button type="button" class="drawer-close" id="drawer-close" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <line x1="6" y1="6" x2="18" y2="18"/>
+          <line x1="18" y1="6" x2="6" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="drawer-nav" aria-label="Mobile links">
+      <a class="drawer-link" href="#income-systems">Income Systems</a>
+      <a class="drawer-link" href="#packages">Packages</a>
+      <a class="drawer-link" href="#transformations">Before vs. After</a>
+      <a class="drawer-link" href="#live-work">Live Work</a>
+      <a class="drawer-link" href="#faq">FAQ</a>
+      <a class="drawer-link" href="bio-link.html">Personal Hub</a>
+    </nav>
+    <div class="drawer-footer">
+      <a class="btn btn--amber btn--block" href="#book">Claim $3–$7 Offer</a>
+      <a class="btn btn--ghost btn--block" href="#live-work">See Live Demos</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- Centered High-Impact Hero -->
+    <section class="hero" id="top">
+      <div class="container hero-center">
+        <span class="pill pill--emerald">
+          <span class="pill-dot" aria-hidden="true"></span>
+          Grand Opening · First 10 Founding Spots
+        </span>
+
+        <h1 class="hero-title">
+          Turn Your Social Presence <span class="text-amber">Into Income.</span>
+        </h1>
+
+        <p class="hero-lead">
+          Custom personal websites, social persona strategy, and monetization funnels—built to help you earn from affiliate hubs, e-books, e-courses, and paid bookings.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn--amber btn--lg" href="#book">Claim Founding Offer ($3–$7)</a>
+          <a class="btn btn--ghost btn--lg" href="#live-work">See Live Demos &darr;</a>
+        </div>
+
+        <div class="hero-meta-strip" aria-label="Key launch benefits">
+          <span class="meta-chip"><span class="mono text-amber">$3–$7</span> Founding Launch</span>
+          <span class="meta-sep" aria-hidden="true">/</span>
+          <span class="meta-chip"><span class="mono text-emerald">Year-1 .site</span> Included</span>
+          <span class="meta-sep" aria-hidden="true">/</span>
+          <span class="meta-chip"><span class="mono">$0/mo</span> Hosting Forever</span>
+        </div>
+
+        <!-- Interactive Dark Obsidian Studio Preview Strip -->
+        <div class="studio-preview-shell" aria-label="Interactive personal website monetization preview">
+          <div class="preview-chrome">
+            <div class="chrome-lights" aria-hidden="true">
+              <span class="chrome-light chrome-light--amber"></span>
+              <span class="chrome-light chrome-light--emerald"></span>
+              <span class="chrome-light"></span>
+            </div>
+            <div class="chrome-address">
+              <span class="chrome-live-dot" aria-hidden="true"></span>
+              <span class="mono">www.yourname.site</span>
+            </div>
+            <span class="chrome-badge mono">0% FEES · $0/MO</span>
+          </div>
+
+          <div class="preview-body">
+            <!-- 4 Interactive Monetization Path Switchers -->
+            <div class="stream-tabs" role="tablist" aria-label="Explore monetization paths">
+              <button
+                type="button"
+                class="stream-tab is-active"
+                role="tab"
+                id="tab-affiliate"
+                aria-selected="true"
+                aria-controls="stream-panel"
+                data-stream-tab="affiliate"
+              >
+                <span class="stream-dot stream-dot--emerald" aria-hidden="true"></span>
+                <span class="stream-tab-copy">
+                  <span class="stream-tab-title">Affiliate Product Hubs</span>
+                  <span class="stream-tab-sub">Curated gear &amp; brand picks</span>
+                </span>
+              </button>
+
+              <button
+                type="button"
+                class="stream-tab"
+                role="tab"
+                id="tab-ebooks"
+                aria-selected="false"
+                aria-controls="stream-panel"
+                data-stream-tab="ebooks"
+              >
+                <span class="stream-dot stream-dot--amber" aria-hidden="true"></span>
+                <span class="stream-tab-copy">
+                  <span class="stream-tab-title">E-Books &amp; Digital Guides</span>
+                  <span class="stream-tab-sub">Flagship PDF &amp; chapter previews</span>
+                </span>
+              </button>
+
+              <button
+                type="button"
+                class="stream-tab"
+                role="tab"
+                id="tab-courses"
+                aria-selected="false"
+                aria-controls="stream-panel"
+                data-stream-tab="courses"
+              >
+                <span class="stream-dot stream-dot--violet" aria-hidden="true"></span>
+                <span class="stream-tab-copy">
+                  <span class="stream-tab-title">E-Courses &amp; Workshops</span>
+                  <span class="stream-tab-sub">Structured modules &amp; waitlists</span>
+                </span>
+              </button>
+
+              <button
+                type="button"
+                class="stream-tab"
+                role="tab"
+                id="tab-bookings"
+                aria-selected="false"
+                aria-controls="stream-panel"
+                data-stream-tab="bookings"
+              >
+                <span class="stream-dot stream-dot--coral" aria-hidden="true"></span>
+                <span class="stream-tab-copy">
+                  <span class="stream-tab-title">1:1 Paid Bookings</span>
+                  <span class="stream-tab-sub">Live slots &amp; instant .ics invites</span>
+                </span>
+              </button>
+            </div>
+
+            <!-- Live Mini-Canvas Output -->
+            <div class="stream-stage" id="stream-panel" role="tabpanel" aria-labelledby="tab-affiliate" aria-live="polite">
+              <div class="stage-top">
+                <span class="pill pill--emerald" id="stage-pill">Revenue Stream 01 · Product Hub</span>
+                <span class="mono stage-route" id="stage-route">yourname.site/shop</span>
+              </div>
+              <h2 class="stage-heading" id="stage-heading">Curated Affiliate Product Hubs</h2>
+              <p class="stage-copy" id="stage-copy">
+                Replace messy link lists with filterable, mobile-first product shelves designed to turn daily recommendations into recurring revenue.
+              </p>
+              <div class="stage-cards" id="stage-cards">
+                <div class="stage-mini-card">
+                  <span class="mono stage-mini-tag">CATEGORY FILTER</span>
+                  <strong>All · Gear · Books · Desk</strong>
+                </div>
+                <div class="stage-mini-card">
+                  <span class="mono stage-mini-tag">MOBILE UX</span>
+                  <strong>1-Tap Clean Preview Cards</strong>
+                </div>
+                <div class="stage-mini-card">
+                  <span class="mono stage-mini-tag">OWNERSHIP</span>
+                  <strong>Branded .site URL</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: Asymmetric Bento Grid (#income-systems) -->
+    <section class="section section--band" id="income-systems">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Income Systems</span>
+          <h2>Turn profile traffic into an asset you own.</h2>
+          <p class="section-lead">Four core pillars built to convert casual followers into paying readers, students, and clients.</p>
+        </div>
+
+        <div class="bento-grid">
+          <!-- Tile 1 (Wide 7-col) -->
+          <article class="bento-tile bento-tile--wide">
+            <div class="bento-head">
+              <span class="pill pill--emerald">Revenue Paths</span>
+              <span class="mono bento-index">01</span>
+            </div>
+            <h3>Monetize Your Audience</h3>
+            <p class="bento-copy">
+              Turn profile clicks into <strong>Affiliate Hubs, E-Books, E-Courses, or 1:1 Bookings</strong>—organized in one fast destination with zero scattered links.
+            </p>
+            <div class="bento-chip-row">
+              <span class="micro-chip">Affiliate Hubs</span>
+              <span class="micro-chip">E-Books</span>
+              <span class="micro-chip">E-Courses</span>
+              <span class="micro-chip">1:1 Bookings</span>
+            </div>
+          </article>
+
+          <!-- Tile 2 (Narrow 5-col Highlight) -->
+          <article class="bento-tile bento-tile--narrow bento-tile--amber-tint">
+            <div class="bento-head">
+              <span class="pill pill--amber">Year-1 Included</span>
+              <span class="mono bento-index">02</span>
+            </div>
+            <h3>Your Name, Live Online</h3>
+            <p class="bento-copy">
+              Personalized <span class="mono text-primary">www.yourname.site</span> custom domain included for Year 1 with <strong>$0/mo hosting forever</strong>.
+            </p>
+            <div class="domain-badge-bar">
+              <span class="chrome-live-dot" aria-hidden="true"></span>
+              <span class="mono">https://www.yourname.site</span>
+            </div>
+          </article>
+
+          <!-- Tile 3 (Narrow 5-col) -->
+          <article class="bento-tile bento-tile--narrow">
+            <div class="bento-head">
+              <span class="pill pill--violet">Growth Strategy</span>
+              <span class="mono bento-index">03</span>
+            </div>
+            <h3>Persona &amp; Growth Strategy</h3>
+            <p class="bento-copy">
+              Empowering profile analytics &amp; content direction that unlocks hidden engagement, clearer hooks, and brand partnerships.
+            </p>
+            <div class="bento-chip-row">
+              <span class="micro-chip">Bio Hook</span>
+              <span class="micro-chip">Pinned Funnel</span>
+              <span class="micro-chip">Brand Readiness</span>
+            </div>
+          </article>
+
+          <!-- Tile 4 (Wide 7-col) -->
+          <article class="bento-tile bento-tile--wide">
+            <div class="bento-head">
+              <span class="pill pill--coral">Human Craft</span>
+              <span class="mono bento-index">04</span>
+            </div>
+            <h3>Direct Human Support</h3>
+            <p class="bento-copy">
+              Fast daily response &amp; hands-on revisions powered by a modern research &amp; design stack + human craft—verified on real desktop and mobile browsers.
+            </p>
+            <div class="bento-chip-row">
+              <span class="micro-chip">Desktop + Mobile QA</span>
+              <span class="micro-chip">Direct Revisions</span>
+              <span class="micro-chip">Zero Recycled Templates</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Grand Opening Packages (#packages) -->
+    <section class="section" id="packages">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Grand Opening · First 10 Founding Spots</span>
+          <h2>Simple founding pricing. Zero monthly hosting.</h2>
+          <p class="section-lead">Opening 10 symbolic founding slots to build verified international case studies—full bespoke studio craft included.</p>
+        </div>
+
+        <!-- Free Custom Domain Value Anchor Banner -->
+        <div class="domain-banner">
+          <div class="domain-banner-top">
+            <span class="pill pill--emerald">Free Custom Domain Value Anchor</span>
+            <div class="domain-pills" aria-label="Example custom domains">
+              <span class="url-pill mono">www.serenah.site</span>
+              <span class="url-pill mono">www.yourname.site</span>
+            </div>
+          </div>
+          <p class="domain-banner-copy">
+            Registering a custom domain alone costs <strong>$2–$3+</strong> — during our Grand Opening (First 10 Spots), your Year-1 <span class="mono">.site</span> domain is included free with <strong>$0/mo hosting forever</strong>. Share any reference site you love and I'll craft your own custom version.
+          </p>
+        </div>
+
+        <!-- 3 Sculpted Dark Pricing Cards -->
+        <div class="pricing-grid">
+          <!-- $3 Card -->
+          <article class="price-card">
+            <div class="price-top">
+              <span class="pill pill--emerald">Year-1 .site Included</span>
+              <span class="mono price-cadence">$1/day · 3 days</span>
+            </div>
+            <h3>Personal Site Launch</h3>
+            <div class="price-row">
+              <span class="price-amount">$3</span>
+              <span class="price-unit">one-time launch</span>
+            </div>
+            <ul class="price-list">
+              <li><span class="check-mark" aria-hidden="true">&#10003;</span><span>Custom mobile-ready site (or inspired by your reference link).</span></li>
+              <li><span class="check-mark" aria-hidden="true">&#10003;</span><span>Live on <span class="mono">www.yourname.site</span> (Year-1 <span class="mono">.site</span> + $0/mo hosting).</span></li>
+              <li><span class="check-mark" aria-hidden="true">&#10003;</span><span><strong>3 days</strong> free minor revisions &amp; direct Q&amp;A.</span></li>
+            </ul>
+            <div class="price-foot">
+              <button type="button" class="btn btn--ghost btn--block" data-select-package="site-launch">
+                Select Site Launch — $3
+              </button>
+            </div>
+          </article>
+
+          <!-- $5 Card -->
+          <article class="price-card">
+            <div class="price-top">
+              <span class="pill pill--violet">Growth Blueprint</span>
+              <span class="mono price-cadence">~$0.71/day · 7 days</span>
+            </div>
+            <h3>Social Persona &amp; Income Strategy</h3>
+            <div class="price-row">
+              <span class="price-amount">$5</span>
+              <span class="price-unit">one-time launch</span>
+            </div>
+            <ul class="price-list">
+              <li><span class="check-mark" aria-hidden="true">&#10003;</span><span>Empowering profile &amp; engagement analysis.</span></li>
+              <li><span class="check-mark" aria-hidden="true">&#10003;</span><span>Unlock affiliate, e-book, e-course &amp; brand-deal potential.</span></li>
+              <li><span class="check-mark" aria-hidden="true">&#10003;</span><span><strong>7 days</strong> free revisions &amp; direct strategy chat.</span></li>
+            </ul>
+            <div class="price-foot">
+              <button type="button" class="btn btn--ghost btn--block" data-select-package="social-strategy">
+                Select Income Strategy — $5
+              </button>
+            </div>
+          </article>
+
+          <!-- $7 Featured Obsidian-Amber Card -->
+          <article class="price-card price-card--featured">
+            <div class="featured-top-bar" aria-hidden="true"></div>
+            <div class="price-top">
+              <span class="pill pill--amber">Best Value · Priority</span>
+              <span class="mono price-cadence text-amber">~$0.23/day · 30 days!</span>
+            </div>
+            <h3>Complete All-in-One Suite</h3>
+            <div class="price-row">
+              <span class="price-amount">$7</span>
+              <span class="price-unit">complete suite</span>
+            </div>
+            <ul class="price-list">
+              <li><span class="check-mark check-mark--amber" aria-hidden="true">&#10003;</span><span>Custom live website (<span class="mono">www.yourname.site</span> Year-1 included).</span></li>
+              <li><span class="check-mark check-mark--amber" aria-hidden="true">&#10003;</span><span>Full Social-to-Income &amp; Persona Blueprint + Personal Hub.</span></li>
+              <li><span class="check-mark check-mark--amber" aria-hidden="true">&#10003;</span><span><strong>30 full days (1 month)</strong> Priority Support &amp; unlimited minor revisions.</span></li>
+            </ul>
+            <div class="price-foot">
+              <button type="button" class="btn btn--amber btn--block" data-select-package="complete-suite">
+                Claim Complete Suite — $7
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Compact 1-Line Ongoing Care Bar -->
+        <div class="care-bar">
+          <p class="care-bar-text">
+            Your site stays live forever at <strong>$0/month</strong>. Need future updates later? Optional care is just <strong>$5/month</strong> (or <strong>$3</strong> per quick update) — zero lock-in.
+          </p>
+          <span class="pill pill--emerald">Zero Contracts</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Dark-Mode Before vs After Profile Makeover -->
+    <section class="section section--band" id="transformations">
+      <div class="container">
+        <div class="section-head">
+          <div class="head-badges">
+            <span class="eyebrow">Profile Transformation</span>
+            <span class="pill pill--violet">Sample Breakdown</span>
+          </div>
+          <h2>Before vs. After: clear paths to revenue.</h2>
+          <p class="section-lead">How restructuring the first three seconds of a profile unlocks clicks, trust, and direct income.</p>
+        </div>
+
+        <div class="makeover-grid">
+          <!-- BEFORE -->
+          <article class="makeover-card" aria-label="Before profile makeover sample">
+            <div class="makeover-head">
+              <h3>Scattered Profile</h3>
+              <span class="pill pill--coral">Before · Zero Income Path</span>
+            </div>
+
+            <div class="phone-frame">
+              <div class="phone-bar">
+                <span class="mono">@alex.creates</span>
+                <span class="mono">Unfocused</span>
+              </div>
+              <div class="phone-id-row">
+                <span class="phone-avatar" aria-hidden="true">AC</span>
+                <div class="phone-metrics">
+                  <span><strong>184</strong> Posts</span>
+                  <span><strong>12.4K</strong> Followers</span>
+                  <span><strong>612</strong> Following</span>
+                </div>
+              </div>
+              <div class="phone-bio">
+                <strong>Alex</strong>
+                <p>Lifestyle &amp; daily moments | coffee lover | DM for collabs | links below</p>
+                <span class="bio-url bio-url--before mono">linktr.ee/user_9821</span>
+              </div>
+              <div class="phone-highlights">
+                <span class="hl-chip">Random</span>
+                <span class="hl-chip">Trip 23</span>
+                <span class="hl-chip">Food</span>
+                <span class="hl-chip">Misc</span>
+              </div>
+            </div>
+
+            <div class="makeover-tags">
+              <span class="pill pill--coral">Vague bio hook</span>
+              <span class="pill pill--coral">Generic third-party URL</span>
+              <span class="pill pill--coral">No product or booking funnel</span>
+            </div>
+          </article>
+
+          <!-- AFTER -->
+          <article class="makeover-card makeover-card--after" aria-label="After profile makeover sample">
+            <div class="makeover-head">
+              <h3>Income-Ready Hub</h3>
+              <span class="pill pill--emerald">After · Branded Funnel</span>
+            </div>
+
+            <div class="phone-frame phone-frame--after">
+              <div class="phone-bar">
+                <span class="mono">@alex.creates</span>
+                <span class="mono text-emerald">Optimized</span>
+              </div>
+              <div class="phone-id-row">
+                <span class="phone-avatar phone-avatar--after" aria-hidden="true">AC</span>
+                <div class="phone-metrics">
+                  <span><strong>184</strong> Posts</span>
+                  <span><strong>12.4K</strong> Followers</span>
+                  <span><strong>612</strong> Following</span>
+                </div>
+              </div>
+              <div class="phone-bio">
+                <strong>Alex Carter · Creator Workspace Systems</strong>
+                <p>Desk setups, flagship e-book &amp; 1:1 studio audits. Start here:</p>
+                <span class="bio-url bio-url--after mono">www.yourname.site</span>
+              </div>
+              <div class="phone-highlights">
+                <span class="hl-chip hl-chip--after">Start Here</span>
+                <span class="hl-chip hl-chip--after">E-Book</span>
+                <span class="hl-chip hl-chip--after">Shop Hub</span>
+                <span class="hl-chip hl-chip--after">Book 1:1</span>
+              </div>
+            </div>
+
+            <div class="makeover-tags">
+              <span class="pill pill--emerald">3-second positioning</span>
+              <span class="pill pill--emerald">Branded www.yourname.site</span>
+              <span class="pill pill--emerald">Clear E-Book, Hub &amp; Booking path</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Featured Live Work (#live-work) -->
+    <section class="section" id="live-work">
+      <div class="container">
+        <div class="section-head">
+          <div class="head-badges">
+            <span class="eyebrow">Live Portfolio Work</span>
+            <span class="pill pill--amber">Zero Recycled Templates</span>
+          </div>
+          <h2>Every niche gets its own visual world.</h2>
+          <p class="section-lead">Inspect both live concept builds—different navbars, different typography, different palettes, and custom interactive funnels.</p>
+        </div>
+
+        <div class="work-grid">
+          <!-- Serena Flow Showcase -->
+          <article class="work-card">
+            <div class="mini-browser mini-browser--serena" aria-hidden="true">
+              <div class="mini-chrome mini-chrome--serena">
+                <span class="mono">serenaflow.site</span>
+                <span class="mono">Light Botanical</span>
+              </div>
+              <div class="mini-canvas mini-canvas--serena">
+                <div class="mini-left">
+                  <span class="mini-tag mini-tag--serena">Yoga &amp; Mat Pilates</span>
+                  <div class="mini-title mini-title--serena">Mindful movement built for real life.</div>
+                  <span class="mini-cta mini-cta--serena">Book a Class</span>
+                </div>
+                <div class="mini-panel mini-panel--serena">
+                  <strong>Live Class Calendar</strong>
+                  <span>Mineral canvas + Botanical Olive &amp; Terracotta + My Essentials hub.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-body">
+              <div class="work-pills">
+                <span class="pill pill--emerald">Light Botanical Editorial</span>
+                <span class="pill pill--violet">Concept Showcase</span>
+              </div>
+              <h3>Serena Flow — Yoga &amp; Mat Pilates</h3>
+              <p class="work-desc">
+                Warm mineral wellness studio with interactive class booking (<span class="mono">.ics</span>), sticky navigation, and a dedicated Personal Hub.
+              </p>
+              <div class="work-actions">
+                <a class="btn btn--amber" href="../projects/serena-flow-yoga-concept/serena-test.html">View Live Site &rarr;</a>
+                <a class="btn btn--ghost" href="../projects/serena-flow-yoga-concept/serena-bio-test.html">Personal Hub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Marcus Vale Showcase (Updated Warm Woody Espresso & Mocha-Sand Preview!) -->
+          <article class="work-card">
+            <div class="mini-browser mini-browser--marcus" aria-hidden="true">
+              <div class="mini-chrome mini-chrome--marcus">
+                <span class="mono">VALE CLARITY</span>
+                <span class="mono">Warm Woody Editorial</span>
+              </div>
+              <div class="mini-canvas mini-canvas--marcus">
+                <div class="mini-left">
+                  <span class="mini-tag mini-tag--marcus">E-Book · Videos · Mentoring</span>
+                  <div class="mini-title mini-title--marcus">Speak Clearly. Lead Calmly. Decide Faster.</div>
+                  <span class="mini-cta mini-cta--marcus">Buy E-Book — $19</span>
+                </div>
+                <div class="mini-panel mini-panel--marcus">
+                  <strong>3D Flagship Guide</strong>
+                  <span>Deep Espresso-Walnut + Warm Mocha-Sand + YouTube/TikTok/IG video shelf.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="work-body">
+              <div class="work-pills">
+                <span class="pill pill--amber">Warm Woody Editorial</span>
+                <span class="pill pill--violet">Concept Showcase</span>
+              </div>
+              <h3>Vale Clarity — Marcus Vale</h3>
+              <p class="work-desc">
+                Executive mentor &amp; author hub featuring a 3D Flagship E-Book spotlight, Watch My Videos shelf, selective mentoring calendar, and Personal Hub.
+              </p>
+              <div class="work-actions">
+                <a class="btn btn--amber" href="../projects/marcus-vale-mentor-concept/index.html">View Live Site &rarr;</a>
+                <a class="btn btn--ghost" href="../projects/marcus-vale-mentor-concept/bio-link.html">Personal Hub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Concise FAQ Accordion (#faq) -->
+    <section class="section section--band" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-intro">
+          <span class="eyebrow">FAQ</span>
+          <h2>Straight answers. Zero fine print.</h2>
+          <p class="section-lead">Clear terms on founding pricing, Year-1 <span class="mono">.site</span> domains, revisions, and zero-lock-in care.</p>
+          <a class="btn btn--amber" href="#book">Reserve Founding Spot</a>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>
+              <span>Why are Grand Opening packages only $3, $5, and $7?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              I am opening the first 10 founding slots at symbolic launch pricing to build verified international case studies and honest client reviews—delivering bespoke studio craft at a fraction of future rates.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>How do the free Year-1 .site domain and $0/mo hosting work?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              Your personalized Year-1 <span class="mono">.site</span> domain (<span class="mono">www.yourname.site</span>) is included free with permanent $0/month static hosting. In Year 2, renew the domain at standard registrar rates or stay live forever at $0/mo on a clean branded web link.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Can I share a reference website style I already love?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              Yes—paste any reference link inside the booking calendar below. I study the mood, spacing, and structure you admire, then design an original custom version tailored to your own income goals.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>What does "unlimited minor revisions" include?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              During your support window (3, 7, or 30 full days on the $7 Complete Suite), request unlimited copy tweaks, link swaps, color refinements, and layout adjustments as you publish new offers.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>What happens after my complimentary support window ends?</span>
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              Your site stays online forever at $0/month with zero forced subscriptions. Need fresh updates later? Optional care is just $5/month or $3 per quick update—zero contracts, zero lock-in.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Dark Obsidian Interactive Booking Calendar (#book) -->
+    <section class="section" id="book">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Interactive Project Booking</span>
+          <h2>Reserve your founding spot &amp; discovery slot.</h2>
+          <p class="section-lead">Pick your package, date, and WIB time slot, share an optional reference URL, and download your <span class="mono">.ics</span> invite instantly.</p>
+        </div>
+
+        <div class="booking-grid">
+          <!-- Left Panel: Steps 1–3 -->
+          <div class="booking-panel">
+            <!-- Step 1: Package Sync -->
+            <div class="booking-block">
+              <div class="step-head">
+                <span class="step-badge mono">01</span>
+                <span class="step-title">Select Package</span>
+              </div>
+              <div class="pkg-picker" role="group" aria-label="Select studio package">
+                <button type="button" class="pkg-choice" data-package-option="site-launch" aria-pressed="false">
+                  <span class="pkg-choice-info">
+                    <span class="pkg-choice-name">Personal Site Launch</span>
+                    <span class="pkg-choice-meta">Year-1 .site · $0/mo hosting · 3 days support</span>
+                  </span>
+                  <span class="pkg-choice-price mono">$3</span>
+                </button>
+
+                <button type="button" class="pkg-choice" data-package-option="social-strategy" aria-pressed="false">
+                  <span class="pkg-choice-info">
+                    <span class="pkg-choice-name">Social Persona &amp; Income Strategy</span>
+                    <span class="pkg-choice-meta">Profile audit · Monetization roadmap · 7 days support</span>
+                  </span>
+                  <span class="pkg-choice-price mono">$5</span>
+                </button>
+
+                <button type="button" class="pkg-choice" data-package-option="complete-suite" aria-pressed="true">
+                  <span class="pkg-choice-info">
+                    <span class="pkg-choice-name">Complete All-in-One Suite</span>
+                    <span class="pkg-choice-meta">Site + Strategy + 30 days Priority Support</span>
+                  </span>
+                  <span class="pkg-choice-price mono">$7</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Calendar Date Grid -->
+            <div class="booking-block">
+              <div class="step-head-row">
+                <div class="step-head">
+                  <span class="step-badge mono">02</span>
+                  <span class="step-title">Choose Date</span>
+                </div>
+                <span class="mono step-hint">Mon–Sat Open</span>
+              </div>
+
+              <div class="cal-bar">
+                <span class="cal-month" id="calendar-month-label" aria-live="polite">Loading...</span>
+                <div class="cal-nav-group">
+                  <button type="button" class="cal-nav-btn" id="cal-prev" aria-label="Previous month">&lsaquo;</button>
+                  <button type="button" class="cal-nav-btn" id="cal-next" aria-label="Next month">&rsaquo;</button>
+                </div>
+              </div>
+
+              <div class="cal-weekdays" aria-hidden="true">
+                <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+              </div>
+              <div class="cal-days" id="calendar-days" role="group" aria-label="Available dates"></div>
+            </div>
+
+            <!-- Step 3: Time Slots -->
+            <div class="booking-block">
+              <div class="step-head-row">
+                <div class="step-head">
+                  <span class="step-badge mono">03</span>
+                  <span class="step-title">Choose Time</span>
+                </div>
+                <span class="pill pill--emerald mono">WIB · UTC+7</span>
+              </div>
+              <div class="slot-grid" id="time-slots" role="group" aria-label="Available discovery time slots">
+                <button type="button" class="slot-btn" data-time-slot="09:00" aria-pressed="true">09:00</button>
+                <button type="button" class="slot-btn" data-time-slot="11:00" aria-pressed="false">11:00</button>
+                <button type="button" class="slot-btn" data-time-slot="14:30" aria-pressed="false">14:30</button>
+                <button type="button" class="slot-btn" data-time-slot="17:00" aria-pressed="false">17:00</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Panel: Step 4 Form & Confirmation -->
+          <div class="booking-panel">
+            <div id="booking-form-wrap">
+              <div class="step-head">
+                <span class="step-badge mono">04</span>
+                <span class="step-title">Project Details</span>
+              </div>
+
+              <div class="summary-box" aria-live="polite">
+                <div class="summary-item">
+                  <span class="summary-label">Package</span>
+                  <span class="summary-val" id="summary-package">Complete All-in-One Suite ($7)</span>
+                </div>
+                <div class="summary-item">
+                  <span class="summary-label">Date</span>
+                  <span class="summary-val" id="summary-date">Loading date...</span>
+                </div>
+                <div class="summary-item">
+                  <span class="summary-label">Time</span>
+                  <span class="summary-val mono" id="summary-time">09:00 WIB (UTC+7)</span>
+                </div>
+              </div>
+
+              <form class="booking-form" id="booking-form" novalidate>
+                <div class="field">
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    placeholder="e.g., Maya Lin"
+                    required
+                    aria-describedby="error-name"
+                  >
+                  <span class="field-error" id="error-name" role="alert"></span>
+                </div>
+
+                <div class="field">
+                  <label for="email">Email Address</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                    required
+                    aria-describedby="error-email"
+                  >
+                  <span class="field-error" id="error-email" role="alert"></span>
+                </div>
+
+                <div class="field">
+                  <label for="reference-url">
+                    Reference Website URL <span class="field-opt">(Optional — http:// or https://)</span>
+                  </label>
+                  <input
+                    id="reference-url"
+                    name="referenceUrl"
+                    type="url"
+                    inputmode="url"
+                    placeholder="https://example.com"
+                    aria-describedby="error-reference"
+                  >
+                  <span class="field-error" id="error-reference" role="alert"></span>
+                </div>
+
+                <div class="field">
+                  <label for="project-notes">
+                    Goals &amp; Social Handle <span class="field-opt">(Optional)</span>
+                  </label>
+                  <textarea
+                    id="project-notes"
+                    name="notes"
+                    rows="3"
+                    placeholder="@yourhandle — e.g. launching an e-book + affiliate hub on www.yourname.site"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--amber btn--block btn--lg" id="booking-submit">
+                  Confirm Booking Request
+                </button>
+
+                <p class="preview-micro-note">
+                  Interactive booking preview — generates a real RFC 5545 <span class="mono">.ics</span> invite locally with zero live checkout.
+                </p>
+              </form>
+            </div>
+
+            <!-- XSS-Safe Confirmation Card -->
+            <div class="confirm-card" id="booking-confirmation" tabindex="-1" hidden>
+              <span class="pill pill--emerald">
+                <span class="pill-dot" aria-hidden="true"></span>
+                Booking Request Prepared
+              </span>
+              <h3>Your discovery slot is ready.</h3>
+              <p class="confirm-sub">Download your calendar invite below or return to adjust your details anytime.</p>
+
+              <dl class="confirm-dl">
+                <div class="confirm-row">
+                  <dt>Package</dt>
+                  <dd id="confirm-package"></dd>
+                </div>
+                <div class="confirm-row">
+                  <dt>Date</dt>
+                  <dd id="confirm-date"></dd>
+                </div>
+                <div class="confirm-row">
+                  <dt>Time</dt>
+                  <dd id="confirm-time"></dd>
+                </div>
+                <div class="confirm-row">
+                  <dt>Name</dt>
+                  <dd id="confirm-name"></dd>
+                </div>
+                <div class="confirm-row">
+                  <dt>Email</dt>
+                  <dd id="confirm-email"></dd>
+                </div>
+                <div class="confirm-row" id="confirm-reference-row" hidden>
+                  <dt>Reference URL</dt>
+                  <dd id="confirm-reference"></dd>
+                </div>
+                <div class="confirm-row" id="confirm-notes-row" hidden>
+                  <dt>Notes</dt>
+                  <dd id="confirm-notes"></dd>
+                </div>
+              </dl>
+
+              <div class="confirm-actions">
+                <button type="button" class="btn btn--amber" id="download-ics-btn">
+                  Download Calendar Invite (.ics)
+                </button>
+                <button type="button" class="btn btn--ghost" id="modify-booking-btn">
+                  Modify Slot
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dark Obsidian Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">Albert — Digital Presence &amp; Growth Studio</span>
+          <p class="footer-copy">
+            Bespoke personal websites, social persona strategy, and income-ready hubs live under your own Year-1 <span class="mono">.site</span> domain at $0/month hosting.
+          </p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a class="footer-link" href="#income-systems">Income Systems</a>
+          <a class="footer-link" href="#packages">Packages</a>
+          <a class="footer-link" href="#live-work">Live Work</a>
+          <a class="footer-link" href="#faq">FAQ</a>
+          <a class="footer-link" href="#book">Book Slot</a>
+          <a class="footer-link" href="bio-link.html">Personal Hub</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Albert Studio. All rights reserved.</span>
+        <a class="footer-email mono" href="mailto:hello@albertstudio.site">hello@albertstudio.site</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albert — Personal Hub | Social-to-Income Digital Studio</title>
+  <meta name="description" content="Direct access to Albert's Grand Opening Founding-Client Offers ($3, $5, $7), interactive booking calendar, and live portfolio showcases.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="hub-page">
+  <a class="skip-link" href="#hub-content">Skip to quick links</a>
+
+  <header class="hub-topbar">
+    <div class="hub-topbar-inner">
+      <a class="hub-back-link" href="index.html">&larr; Full Studio Website</a>
+      <span class="mono hub-label">Personal Hub</span>
+    </div>
+  </header>
+
+  <main class="hub-main" id="hub-content">
+    <!-- Profile Card -->
+    <section class="hub-profile" aria-label="Albert Studio profile">
+      <div class="hub-monogram" aria-hidden="true">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="64" height="64" rx="16" fill="#111214"/>
+          <rect x="2" y="2" width="60" height="60" rx="14" stroke="#F59E0B" stroke-opacity="0.5" stroke-width="1.5"/>
+          <path d="M32 14L48 49H41L37.4 40.6H26.6L23 49H16L32 14ZM32 23.8L28.8 34.6H35.2L32 23.8Z" fill="#F4F4F5"/>
+          <circle cx="48" cy="17" r="4" fill="#F59E0B"/>
+        </svg>
+      </div>
+
+      <span class="pill pill--emerald">
+        <span class="pill-dot" aria-hidden="true"></span>
+        Grand Opening · First 10 Founding Spots
+      </span>
+
+      <h1 class="hub-title">Albert — Personal Hub</h1>
+      <p class="hub-tagline">
+        Turn your social presence into income. Custom <span class="mono">.site</span> websites, social strategy &amp; monetization hubs starting at $3 ($0/mo hosting).
+      </p>
+    </section>
+
+    <!-- Section 1: Founding Offers & Direct Booking -->
+    <section class="hub-section" aria-labelledby="hub-offers-title">
+      <h2 class="hub-section-title mono" id="hub-offers-title">01 · Founding Offers &amp; Booking</h2>
+
+      <div class="hub-stack">
+        <a class="hub-link hub-link--featured" href="index.html?package=complete-suite#book">
+          <span class="hub-link-body">
+            <span class="pill pill--amber">Best Value · ~$0.23/day · 30 Days Priority</span>
+            <span class="hub-link-title">Claim $7 Complete All-in-One Suite</span>
+            <span class="hub-link-sub">Live www.yourname.site + Social-to-Income Blueprint + 30 days unlimited minor revisions</span>
+          </span>
+          <span class="hub-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+
+        <a class="hub-link" href="index.html?package=site-launch#book">
+          <span class="hub-link-body">
+            <span class="hub-link-title">$3 Personal Site Launch · Year-1 .site Included</span>
+            <span class="hub-link-sub">$1/day · Custom mobile-ready site · $0/mo hosting forever · 3 days revisions</span>
+          </span>
+          <span class="hub-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+
+        <a class="hub-link" href="index.html?package=social-strategy#book">
+          <span class="hub-link-body">
+            <span class="hub-link-title">$5 Social Persona &amp; Income Strategy · 7 Days</span>
+            <span class="hub-link-sub">~$0.71/day · Profile analytics + affiliate, e-book &amp; e-course growth roadmap</span>
+          </span>
+          <span class="hub-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+
+        <a class="hub-link" href="index.html#book">
+          <span class="hub-link-body">
+            <span class="hub-link-title">Book a Quick Discovery Slot</span>
+            <span class="hub-link-sub">Choose a WIB (UTC+7) slot, share an optional reference link &amp; download .ics invite</span>
+          </span>
+          <span class="hub-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+
+        <button
+          type="button"
+          class="hub-link hub-link--btn"
+          id="copy-email"
+          data-copy-email="hello@albertstudio.site"
+        >
+          <span class="hub-link-body">
+            <span class="hub-link-title">Copy Studio Email</span>
+            <span class="hub-link-sub mono">hello@albertstudio.site</span>
+          </span>
+          <span class="pill pill--amber">Copy</span>
+        </button>
+
+        <div class="copy-feedback" id="copy-feedback" role="status" aria-live="polite" hidden></div>
+      </div>
+    </section>
+
+    <!-- Section 2: Live Portfolio Showcases -->
+    <section class="hub-section" aria-labelledby="hub-demos-title">
+      <h2 class="hub-section-title mono" id="hub-demos-title">02 · Live Portfolio Showcases</h2>
+
+      <div class="hub-stack">
+        <article class="hub-demo-card">
+          <div class="hub-demo-banner hub-demo-banner--serena">
+            <strong>Serena Flow — Yoga &amp; Mat Pilates</strong>
+            <span class="mono">Light Botanical</span>
+          </div>
+          <div class="hub-demo-body">
+            <p>Botanical Olive &amp; Terracotta wellness site with live class booking calendar and companion Personal Hub.</p>
+            <div class="hub-demo-actions">
+              <a class="btn btn--amber" href="../projects/serena-flow-yoga-concept/serena-test.html">View Live Site &rarr;</a>
+              <a class="btn btn--ghost" href="../projects/serena-flow-yoga-concept/serena-bio-test.html">Personal Hub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="hub-demo-card">
+          <div class="hub-demo-banner hub-demo-banner--marcus">
+            <strong>Vale Clarity — Marcus Vale</strong>
+            <span class="mono">Warm Woody</span>
+          </div>
+          <div class="hub-demo-body">
+            <p>Deep Espresso-Walnut &amp; Mocha-Sand executive mentor showcase with 3D Flagship E-Book, Watch My Videos shelf, and mentoring calendar.</p>
+            <div class="hub-demo-actions">
+              <a class="btn btn--amber" href="../projects/marcus-vale-mentor-concept/index.html">View Live Site &rarr;</a>
+              <a class="btn btn--ghost" href="../projects/marcus-vale-mentor-concept/bio-link.html">Personal Hub</a>
+            </div>
+          </div>
+        </article>
+
+        <a class="btn btn--ghost btn--block" href="index.html">Visit Full Studio Website &rarr;</a>
+      </div>
+    </section>
+
+    <footer class="hub-footer">
+      <span>&copy; 2026 Albert Studio</span>
+      <span class="mono">hello@albertstudio.site</span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

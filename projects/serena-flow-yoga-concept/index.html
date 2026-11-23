@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serena Flow — Mindful Yoga &amp; Mat Pilates (Concept Project)</title>
+  <meta
+    name="description"
+    content="Concept Project 1-page personal website for fictional yoga and Pilates coach Serena Hart. Built as a Track A portfolio exercise with transparent static demo notices."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2324342B'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='34' fill='%23F7F3EC'%3ES%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#top">Skip to main content</a>
+  <div class="concept-banner" role="note">
+    <strong>CONCEPT PROJECT · PORTFOLIO EXERCISE</strong> — Fictional Yoga &amp; Pilates Coach (Static HTML Prototype · No Active Checkout, Live Booking Backend, or Paid Client)
+  </div>
+
+  <!-- Sticky Navigation -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand-mark" href="#top" aria-label="Serena Flow home">
+        <span class="brand-name">Serena Flow</span>
+        <span class="brand-sub">Yoga &amp; Mat Pilates · Concept</span>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#offerings">Offerings</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#gear">Curated Gear</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm desktop-cta" href="bio-link.html">Bio-Link &amp; Gear Hub</a>
+        <button
+          type="button"
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Toggle navigation menu"
+        >
+          <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-drawer" class="mobile-drawer">
+      <ul>
+        <li><a href="#offerings">Offerings</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#gear">Curated Gear</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn btn-primary btn-sm" href="bio-link.html" style="width: 100%;">Open Bio-Link &amp; Gear Hub</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Mindful Movement · Online &amp; Small-Group</span>
+          <h1>Unhurried strength, breath, and alignment for everyday bodies.</h1>
+          <p class="hero-lead">
+            Calm, structured mat Pilates and beginner-friendly yoga coaching designed to ease desk tension, rebuild core stability, and help you stay consistent at home—without extreme choreography.
+          </p>
+          <div class="hero-cta-group">
+            <a class="btn btn-primary" href="#offerings">Explore Coaching Options</a>
+            <a class="btn btn-secondary" href="bio-link.html">Bio-Link &amp; Curated Gear Hub</a>
+          </div>
+          <div class="hero-meta">
+            <span>• Beginner-friendly pacing</span>
+            <span>• Online live sessions</span>
+            <span>• Clear 1-page &amp; bio-link flow</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="editorial-frame" style="margin: 0;">
+            <img
+              src="assets/hero-studio.jpg"
+              alt="Sunlit minimalist yoga and Pilates studio with natural cork yoga mat, cork blocks, wooden bench, and sheer linen curtains"
+              width="1200"
+              height="900"
+            />
+            <figcaption class="frame-caption">
+              <span>Calm home-practice inspired aesthetic</span>
+              <span>Concept Project Visual</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFERINGS -->
+    <section id="offerings" class="section section-sand" aria-labelledby="offerings-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Coaching Services (Direct)</span>
+          <h2 id="offerings-heading">Three simple ways to practice together</h2>
+          <p>
+            Every session focuses on clear verbal cues, joint-friendly modifications, and realistic home routines. All rates shown below are sample placeholders for this Concept Project.
+          </p>
+        </div>
+
+        <div class="offerings-grid">
+          <article class="offering-card">
+            <div>
+              <span class="offering-tag">Small-Group Live</span>
+              <h3>Morning Mobility Flow</h3>
+              <p class="offering-price">Sample Demo Rate · 45 min</p>
+              <p>A grounded blend of breathwork, spinal mobility, and slow yoga transitions before your workday begins.</p>
+              <ul class="offering-list">
+                <li>Capped small-group format for form feedback</li>
+                <li>Beginner modifications shown for every pose</li>
+                <li>Requires only a yoga mat and optional blocks</li>
+              </ul>
+            </div>
+            <a class="btn btn-secondary btn-sm" href="#contact" data-select-offering="Morning Mobility Flow (Small-Group)">Inquire About Group Flow</a>
+          </article>
+
+          <article class="offering-card featured">
+            <div>
+              <span class="offering-tag">Most Structured</span>
+              <h3>1:1 Private Mat Pilates</h3>
+              <p class="offering-price">Sample Demo Rate · 50 min</p>
+              <p>Tailored one-on-one coaching focused on core control, posture, hip stability, and a personalized weekly home plan.</p>
+              <ul class="offering-list">
+                <li>Custom sequence built around your mobility goals</li>
+                <li>Real-time posture and breathing guidance</li>
+                <li>Short 15-minute homework routine included</li>
+              </ul>
+            </div>
+            <a class="btn btn-accent btn-sm" href="#contact" data-select-offering="1:1 Private Mat Pilates">Request 1:1 Intro Session</a>
+          </article>
+
+          <article class="offering-card">
+            <div>
+              <span class="offering-tag">New to Movement</span>
+              <h3>4-Week Beginner Foundation</h3>
+              <p class="offering-price">Sample Demo Rate · 4 Sessions</p>
+              <p>A calm, step-by-step introduction to basic mat alignment, safe core engagement, and prop setup at home.</p>
+              <ul class="offering-list">
+                <li>Zero prior yoga or Pilates experience required</li>
+                <li>Learn how to use blocks and straps effectively</li>
+                <li>Build a sustainable 20-minute home habit</li>
+              </ul>
+            </div>
+            <a class="btn btn-secondary btn-sm" href="#contact" data-select-offering="4-Week Beginner Foundation">Ask About Next Cohort</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH / ABOUT -->
+    <section id="approach" class="section" aria-labelledby="approach-heading">
+      <div class="container approach-grid">
+        <div class="portrait-frame">
+          <img
+            src="assets/coach-portrait.jpg"
+            alt="Fictional yoga and Pilates coach Serena Hart sitting calmly on a woven mat in natural sunlight"
+            width="900"
+            height="900"
+          />
+        </div>
+
+        <div>
+          <span class="eyebrow">About the Concept Persona</span>
+          <h2 id="approach-heading" style="font-size: clamp(2rem, 3.6vw, 2.9rem); margin-bottom: 1rem;">
+            Movement designed to support your life, not exhaust it.
+          </h2>
+          <p style="color: var(--ink-secondary); margin: 0 0 1rem;">
+            Serena Hart is a fictional wellness coach created for this Commerce Studio portfolio exercise. The layout demonstrates how a solo instructor can communicate trust, clarity, and calm professionalism without fabricated credentials or fake client testimonials.
+          </p>
+
+          <div class="principles-list">
+            <div class="principle-item">
+              <h3>1. Joint-Friendly Pacing</h3>
+              <p>Controlled transitions and clear cues take priority over rushed reps or advanced contortions.</p>
+            </div>
+            <div class="principle-item">
+              <h3>2. Breath-Led Core Stability</h3>
+              <p>Learn how diaphragmatic breathing connects directly to deep core engagement and lower-back comfort.</p>
+            </div>
+            <div class="principle-item">
+              <h3>3. Practical Home Setup</h3>
+              <p>Simple props—like cork blocks and a cotton strap—make good alignment accessible in any living room.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE & HONEST BOOKING FLOW -->
+    <section id="schedule" class="section section-sand" aria-labelledby="schedule-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Sample Weekly Rhythm</span>
+          <h2 id="schedule-heading">Schedule &amp; transparent booking process</h2>
+          <p>
+            A solo coach does not need an expensive custom booking platform on day one. Below is a clear sample schedule paired with a simple inquiry-first booking workflow.
+          </p>
+        </div>
+
+        <div class="schedule-grid">
+          <div class="schedule-table" role="region" aria-label="Sample weekly coaching schedule">
+            <div class="schedule-row">
+              <div class="schedule-day">Monday</div>
+              <div class="schedule-class">
+                Morning Mobility Flow
+                <small>Small-group online · Beginner friendly</small>
+              </div>
+              <div class="schedule-time">07:30 – 08:15</div>
+            </div>
+            <div class="schedule-row">
+              <div class="schedule-day">Wednesday</div>
+              <div class="schedule-class">
+                Core &amp; Posture Mat Pilates
+                <small>Small-group online · Mat + resistance band</small>
+              </div>
+              <div class="schedule-time">18:00 – 18:50</div>
+            </div>
+            <div class="schedule-row">
+              <div class="schedule-day">Friday</div>
+              <div class="schedule-class">
+                Evening Wind-Down Stretch
+                <small>Restorative mobility · Mat + bolster or pillow</small>
+              </div>
+              <div class="schedule-time">19:00 – 19:45</div>
+            </div>
+            <div class="schedule-row">
+              <div class="schedule-day">Tue / Thu / Sat</div>
+              <div class="schedule-class">
+                1:1 Private Coaching Slots
+                <small>Flexible 50-minute windows by appointment</small>
+              </div>
+              <div class="schedule-time">By Inquiry</div>
+            </div>
+          </div>
+
+          <aside class="booking-steps-card">
+            <h3>How Booking Works</h3>
+            <ol class="steps-list">
+              <li>Send a short inquiry below with your preferred session type and general availability.</li>
+              <li>Receive available time slots and simple preparation notes by email.</li>
+              <li>Confirm your session directly with the coach before attending.</li>
+            </ol>
+            <div class="honest-notice">
+              <strong>Static Demo Notice:</strong> Live calendar synchronization and payment processing are <em>not</em> connected in this static HTML prototype. For a real client launch, this section links to their verified booking tool (e.g., Cal.com, Calendly) or email workflow after full testing.
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURATED EQUIPMENT BRIDGE (STRICTLY SEPARATE AFFILIATE MODEL) -->
+    <section id="gear" class="section" aria-labelledby="gear-heading">
+      <div class="container gear-bridge">
+        <div class="gear-photo">
+          <img
+            src="assets/curated-gear.jpg"
+            alt="Curated cork yoga mat, cork blocks, cotton strap, sage fabric resistance bands, and cream insulated bottle"
+            width="1200"
+            height="675"
+          />
+        </div>
+
+        <div>
+          <span class="eyebrow">External Recommendations · Separate from Coaching</span>
+          <h2 id="gear-heading" style="font-size: clamp(1.9rem, 3.4vw, 2.75rem); margin-bottom: 0.9rem;">
+            Curated home practice equipment hub
+          </h2>
+          <p style="color: var(--ink-secondary); margin: 0;">
+            Students often ask which mat thickness, cork blocks, or non-slip Pilates bands work best at home. Instead of cluttering the coaching page or paying for an unnecessary ecommerce store, all equipment recommendations live in one clean bio-link hub.
+          </p>
+
+          <div class="disclosure-box">
+            <strong>Affiliate Disclosure:</strong> Equipment links inside the Curated Gear Hub are external merchant affiliate recommendations. Serena Flow does <strong>not</strong> sell, pack, or ship physical products directly; purchases and returns happen exclusively on the external merchant's site.
+          </div>
+
+          <a class="btn btn-primary" href="bio-link.html#equipment-hub">Browse Curated Equipment Hub →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section-sand" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Common Questions</span>
+          <h2 id="faq-heading">Clear answers before you begin</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Do I need to be flexible or experienced before starting?</summary>
+            <div class="faq-answer">
+              Not at all. Sessions are paced specifically for beginners and desk workers, using props like cork blocks or a folded towel so movements meet your body where it is today.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What equipment do I actually need for home sessions?</summary>
+            <div class="faq-answer">
+              A supportive mat is enough to start. Two firm blocks, a simple cotton strap, and a light fabric resistance band are helpful additions later—you can see why each item is useful in the <a href="bio-link.html#equipment-hub" style="text-decoration: underline; color: var(--bg-olive); font-weight: 600;">Curated Equipment Hub</a>.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Does Serena Flow sell and ship the recommended equipment directly?</summary>
+            <div class="faq-answer">
+              No. Coaching services and physical product recommendations are kept completely separate. Equipment links send visitors to external merchants via affiliate referral links with clear disclosures, and there is no checkout cart on this website.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Is this a live studio or a portfolio demonstration?</summary>
+            <div class="faq-answer">
+              This site is a clearly labeled <strong>Concept Project / Portfolio Exercise</strong> created inside Commerce Studio to demonstrate a clean, free-to-host Track A deliverable (1-page personal website + bio-link affiliate hub) for solo coaches and micro-creators.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / STATIC DEMO INQUIRY -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">Start a Conversation</span>
+          <h2 id="contact-heading" style="font-size: clamp(2rem, 3.6vw, 2.85rem); margin-bottom: 1rem;">
+            Send a coaching inquiry
+          </h2>
+          <p style="color: var(--ink-secondary); margin: 0 0 1.25rem;">
+            Share which format fits your week best and any mobility goals you have in mind. In a live client project, this form forwards straight to the coach's verified inbox or scheduling page.
+          </p>
+          <div class="honest-notice">
+            <strong>Interactive Static Preview:</strong> Submitting this form validates your inputs locally in the browser and displays a formatted inquiry preview. No data leaves your browser and no message is sent.
+          </div>
+        </div>
+
+        <form id="inquiry-form" class="contact-form" novalidate>
+          <div class="form-field">
+            <label for="client-name">Your Name</label>
+            <input id="client-name" name="name" type="text" placeholder="e.g., Maya Lin" required />
+          </div>
+
+          <div class="form-field">
+            <label for="client-email">Email Address</label>
+            <input id="client-email" name="email" type="email" placeholder="e.g., maya@example.com" required />
+          </div>
+
+          <div class="form-field">
+            <label for="client-offering">Interested Format</label>
+            <select id="client-offering" name="offering">
+              <option value="1:1 Private Mat Pilates">1:1 Private Mat Pilates</option>
+              <option value="Morning Mobility Flow (Small-Group)">Morning Mobility Flow (Small-Group)</option>
+              <option value="4-Week Beginner Foundation">4-Week Beginner Foundation</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="client-notes">Goals or Preferred Days (Optional)</label>
+            <textarea id="client-notes" name="notes" placeholder="Share your experience level or preferred time window..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Preview Inquiry Summary (Demo)</button>
+          <div id="demo-result" class="demo-result" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Serena Flow</div>
+          <p style="margin: 0; max-width: 42ch;">
+            Track A Concept Project demonstrating a calm 1-page personal website paired with a curated affiliate bio-link hub.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#offerings">Offerings</a>
+          <a href="#schedule">Schedule</a>
+          <a href="bio-link.html">Bio-Link &amp; Gear Hub</a>
+          <a href="#contact">Contact Demo</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>CONCEPT PROJECT · PORTFOLIO EXERCISE (Fictional Coach · Static HTML Prototype)</span>
+        <span>Built inside Commerce Studio · Zero fake clients, testimonials, or checkout flows</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
